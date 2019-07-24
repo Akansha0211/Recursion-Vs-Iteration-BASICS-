@@ -49,6 +49,22 @@ def fibonacci_recursive(n):
 number=int(input("Enter a number"))
 print(fibonacci_recursive(number))
 
+#BINARY EQUIVALENT OF A NUMBER
+l=[]
+def convert_to_binary(n):
+    if n==0:
+        return 1
+    remainder=n%2
+    l.append(remainder)
+    convert_to_binary(n//2)
+number=int(input("Enter an integer"))
+convert_to_binary(number)
+l.reverse()
+for i in l:
+    print(i,end="")
+
+
+
 
 
 
